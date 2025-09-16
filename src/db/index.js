@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { DB_NAME } from "./constants.js"
+import { DB_NAME } from "../constants.js"
 
 
 
@@ -11,6 +11,7 @@ import { DB_NAME } from "./constants.js"
 
         } catch (error) {
             console.log(error);
+            process.exit(1)
 
         }
     })()
