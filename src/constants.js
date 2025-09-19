@@ -1,1 +1,1 @@
-export const DB_NAME="ytdatabase"
+export const DB_NAME="backendYT"
