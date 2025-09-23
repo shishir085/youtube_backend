@@ -2,15 +2,13 @@ import connectDB from "./db/index.js";
 import dotenv from "dotenv";
 dotenv.config({ path: "./env" });
 
-import express from "express";
-
-const app = express();
+import {app} from "./app.js"
 
 connectDB()
   .then(() => {
-    app.listen(process.env.PORT || 6000, () => {
+    app.listen(process.env.PORT, () => {
       console.log(
-        `App listening on port http://localhost:${process.env.PORT}`
+        `App listening on port :${process.env.PORT}`
       );
     });
   })
