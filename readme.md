@@ -1,3 +1,3 @@
 # Backend Project
 
-This is a Project on backend with javascript
+This is a YouTube Project on backend with node and express.
