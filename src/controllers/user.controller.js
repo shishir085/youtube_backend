@@ -5,6 +5,10 @@ import { uploadOnCloudinary } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 
 const registerUser = asyncHandler(async (req, res) => {
+
+
+
+  
   const { fullName, email, username, password } = req.body;
   console.log("email: ", email);
 
@@ -56,5 +60,6 @@ const registerUser = asyncHandler(async (req, res) => {
   return res
     .status(201)
     .json(new ApiResponse(200, createdUser, "User Registered Successfully"));
+  
 });
 export { registerUser };
