@@ -39,9 +39,4 @@ app.use("/api/v1/dashboard", dashboardRouter)
 
 // http://localhost:8000/api/v1/users/register
 
-// Provide a root endpoint that redirects to the healthcheck route
-app.get('/', (req, res) => {
-    return res.redirect('/api/v1/healthcheck');
-});
-
 export { app }
